@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - property:
+      dbms: "db2i"
+      name: "nameOfDbms"
+      value: "Db2 for IBM i"
+  - property:
+      name: "nameOfDbms"
+      value: "Some other DBMS"
+  - changeSet:
+      id: "create-table"
+      author: "Bug Hunter"
+      changes:
+        - createTable:
+            tableName: "what_dbms_am_i"
+            columns:
+              - column:
+                  name: "name"
+                  type: "clob"
+              - column:
+                  name: "description"
+                  type: "clob"
+        - sql:
+            sql: "INSERT INTO what_dbms_am_i (name, description) VALUES ('${nameOfDbms}', '${description}');"
