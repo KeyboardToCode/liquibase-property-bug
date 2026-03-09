@@ -1,3 +1,4 @@
+//Main.java
 package com.testproject.liquibasepropertybug;
 
 import liquibase.changelog.ChangeLogParameters;
@@ -58,6 +59,5 @@ public class Main {
 
         command.execute();
     }
-
 
 }
