@@ -9,7 +9,7 @@ When defining a property within a changelog, you can specify that it should only
 * Additional properties are being set using the ChangeLogParameters class.
 * PostgreSQL is being used as DBMS.
 
-As an result, this will cause the wrong properties to be applied.
+As a result, this will cause the wrong properties to be applied.
 
 ## Prerequisites for using this repository:
 * Administrator access to a PostgreSQL instance.
